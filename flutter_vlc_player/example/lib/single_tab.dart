@@ -35,35 +35,24 @@ class _SingleTabState extends State<SingleTab> {
     listVideos = <VideoData>[];
     //
     listVideos.add(VideoData(
-      name: 'Network Video 1',
-      path:
-          'http://samples.mplayerhq.hu/MPEG-4/embedded_subs/1Video_2Audio_2SUBs_timed_text_streams_.mp4',
+      name: '380GW Live View',
+      path: 'rtsp://192.168.1.254/xxxx.mov',
       type: VideoType.network,
     ));
-    //
     listVideos.add(VideoData(
-      name: 'Network Video 2',
-      path: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
+      name: '380GW Playback',
+      path: 'http://192.168.1.254/DCIM/VIDEO/221126_172320_412.MOV',
       type: VideoType.network,
     ));
-    //
     listVideos.add(VideoData(
-      name: 'HLS Streaming Video 1',
-      path:
-          'http://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.m3u8',
+      name: '380GWX Live View',
+      path: 'http://192.168.1.254:8192',
       type: VideoType.network,
     ));
-    //
     listVideos.add(VideoData(
-      name: 'File Video 1',
-      path: 'System File Example',
-      type: VideoType.file,
-    ));
-    //
-    listVideos.add(VideoData(
-      name: 'Asset Video 1',
-      path: 'assets/sample.mp4',
-      type: VideoType.asset,
+      name: '380GWX Playback',
+      path: 'http://192.168.1.254/DCIM/VIDEO/221126_172320_412.MOV',
+      type: VideoType.network,
     ));
   }
 
